@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H5 Gaming World | Play Free Online Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="#" class="logo">H5<span>GAMING</span></a>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#games">Games</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About</a>
+        </nav>
+        <a href="#games" class="nav-button">Explore Games</a>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="tagline">YOUR NEXT LEVEL STARTS HERE</p>
+                <h1>PLAY MORE.<br><span>LIVE THE GAME.</span></h1>
+                <p class="hero-description">
+                    Discover exciting free browser games.
+                    No downloads. No limits. Just pure gaming fun.
+                </p>
+                <a href="#games" class="play-button">Explore Games →</a>
+            </div>
+            <div class="hero-art">
+                <div class="game-symbol">🎮</div>
+                <div class="floating-symbol">⚡</div>
+                <div class="floating-symbol second">🚀</div>
+            </div>
+        </section>
+
+        <section class="section" id="categories">
+            <div class="section-heading">
+                <div>
+                    <p class="tagline">EXPLORE YOUR STYLE</p>
+                    <h2>Game Categories</h2>
+                </div>
+            </div>
+            <div class="categories">
+                <button class="category active" data-category="All">All Games</button>
+                <button class="category" data-category="Arcade">Arcade</button>
+                <button class="category" data-category="Puzzle">Puzzle</button>
+                <button class="category" data-category="Racing">Racing</button>
+                <button class="category" data-category="Action">Action</button>
+            </div>
+        </section>
+
+        <section class="section" id="games">
+            <div class="section-heading">
+                <div>
+                    <p class="tagline">PICK YOUR ADVENTURE</p>
+                    <h2>Popular Games</h2>
+                </div>
+                <input type="search" id="searchInput"
+                       placeholder="Search games..." aria-label="Search games">
+            </div>
+            <div class="game-grid" id="gameGrid"></div>
+            <p id="noResults" class="no-results" hidden>
+                No games found. Try another search!
+            </p>
+        </section>
+
+        <section class="about section" id="about">
+            <p class="tagline">WELCOME TO OUR WORLD</p>
+            <h2>Gaming Without Limits.</h2>
+            <p>
+                H5 Gaming World brings browser gaming to everyone.
+                Discover new adventures and enjoy games directly online.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#home" class="logo">H5<span>GAMING</span></a>
+        <p>© 2026 H5 Gaming World. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
